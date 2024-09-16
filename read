@@ -1,0 +1,26 @@
+Technologies Used
+  
+  Python: Programming language used for the application.
+  Flask: Web framework for handling HTTP requests.
+  MySQL Connector/Python: Library for interacting with MySQL.
+  Google API Python Client: Library for Google Sheets and Drive API integration.
+  pyngrok: Tool for creating secure tunnels to localhost, useful for exposing the Flask server to the internet.
+
+Google Sheets and MySQL Configuration:
+
+  Google Sheets: The app connects to Google Sheets using OAuth 2.0 credentials. It uses the Google Sheets API to read from and write to spreadsheets, and the Google Drive API to manage files and revisions.
+  MySQL: The app connects to a MySQL database using credentials defined in the DB_CONFIG dictionary. It performs operations such as fetching tables, reading data, and updating records.
+
+Synchronization Setup:
+
+  Spreadsheet Creation: If a spreadsheet for the chosen database does not exist, the app creates a new one.
+  Initial Data Sync: The app fetches data from MySQL tables and syncs it to the Google Sheets spreadsheet, creating new sheets as needed.
+
+Handling Webhooks:
+
+  Webhook Endpoint: The Flask server listens for POST requests on the /update endpoint. This endpoint receives updates from Google Sheets and applies changes to the MySQL database.
+  Update Processing: When an update is received, it extracts the relevant information (sheet name, row, columns, and data) and updates the corresponding MySQL table.
+
+Running the Server:
+
+  Flask with ngrok: The Flask server runs and listens for incoming webhook notifications. Ngrok is used to expose the local server to the internet, providing a public URL for Google Sheets to send webhooks to.
