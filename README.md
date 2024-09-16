@@ -65,5 +65,9 @@ Video Link: https://drive.google.com/file/d/1DgNIJDx0HvjTFyff1n4SpEkdz0uNc0Tw/vi
 Approach:
 
 First things first i knew how to connect to the database (which i'm using MySQL) and second thing to do to find a way write and read from google sheets which from a previous knowledge knowing google provides many api's i started to search if there was google sheets api and which i used to write the data from db to sheets and used a ngrok for real-time synchronization which i came across chat-gpt and used appscript to triggers to snchronize sheets data to db and after ever check of sheets for update it goes and synchronizes db to sheets.
+
+
 In his you can choose which database you want tables to be on sheets and for every database you a separate spreadsheet and each table as separate sheet within the spreadsheet, if the spreadsheet doesn't exist it will create a new spreadsheet as it is new database which we are trying to get to sheets.
+
+
 The main problem which i faced was making it properly send and get the post request from the triggers and to make my url available to internet as i was running on localhost, but later through stackeroverflow and chatgpt i figured a way to get a my localhost to internet.
