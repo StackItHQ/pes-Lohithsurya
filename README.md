@@ -45,11 +45,11 @@ Once you're done, make sure you **record a video** showing your project working.
 
 We have a checklist at the bottom of this README file, which you should update as your progress with your assignment. It will help us evaluate your project.
 
-- [ ] My code's working just fine! 🥳
-- [ ] I have recorded a video showing it working and embedded it in the README ▶️
-- [ ] I have tested all the normal working cases 😎
+- [✅ ] My code's working just fine! 🥳
+- [ ✅] I have recorded a video showing it working and embedded it in the README ▶️
+- [✅ ] I have tested all the normal working cases 😎
 - [ ] I have even solved some edge cases (brownie points) 💪
-- [ ] I added my very planned-out approach to the problem at the end of this README 📜
+- [ ✅] I added my very planned-out approach to the problem at the end of this README 📜
 
 ## Got Questions❓
 Feel free to check the discussions tab, you might get some help there. Check out that tab before reaching out to us. Also, did you know, the internet is a great place to explore? 😛
@@ -60,3 +60,10 @@ All the best ✨.
 
 ## Developer's Section
 *Add your video here, and your approach to the problem (optional). Leave some comments for us here if you want, we will be reading this :)*
+Video Link: https://drive.google.com/file/d/1DgNIJDx0HvjTFyff1n4SpEkdz0uNc0Tw/view?usp=drive_link
+
+Approach:
+
+First things first i knew how to connect to the database (which i'm using MySQL) and second thing to do to find a way write and read from google sheets which from a previous knowledge knowing google provides many api's i started to search if there was google sheets api and which i used to write the data from db to sheets and used a ngrok for real-time synchronization which i came across chat-gpt and used appscript to triggers to snchronize sheets data to db and after ever check of sheets for update it goes and synchronizes db to sheets.
+In his you can choose which database you want tables to be on sheets and for every database you a separate spreadsheet and each table as separate sheet within the spreadsheet, if the spreadsheet doesn't exist it will create a new spreadsheet as it is new database which we are trying to get to sheets.
+The main problem which i faced was making it properly send and get the post request from the triggers and to make my url available to internet as i was running on localhost, but later through stackeroverflow and chatgpt i figured a way to get a my localhost to internet.
