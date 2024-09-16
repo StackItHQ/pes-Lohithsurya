@@ -71,3 +71,7 @@ In his you can choose which database you want tables to be on sheets and for eve
 
 
 The main problem which i faced was making it properly send and get the post request from the triggers and to make my url available to internet as i was running on localhost, but later through stackeroverflow and chatgpt i figured a way to get a my localhost to internet.
+
+
+For a clear flow and what all technologies i have used you can go and check my read file above
+
